@@ -52,7 +52,7 @@ services:
 ## Execution
 * Open the `Docker Desktop GUI` and click on the link `6875:80` of the `bookstack container`. This opens the corresponding ip address in the browser (e.g. http://192.168.1.125:6875/login).
 * **Be patient! It might take a while until the containers can be accessed!** (~30 seconds after `docker-compose up -d` has finished its execution).
-* Login into bookstack with the default email `admin@admin.com` and the default password `password`.
+* Login into bookstack with the default email `admin@admin.com` and the default password `password` as mentioned in the [bookstack installation instructions](https://www.bookstackapp.com/docs/admin/installation/#manual).
 
 ## Tested with
 * `Docker Desktop`: `v4.20.1`
