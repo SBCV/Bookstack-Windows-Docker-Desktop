@@ -47,7 +47,7 @@ services:
 * In `docker-compose.yml` change the value of `APP_URL` to the local ip address (e.g. `APP_URL=192.168.1.125`). You can Use `ipconfig` to determine the local ip address (i.e. the value of the `IPv4 Address` entry).
 * In `docker-compose.yml` adjust the values of `DB_PASS=<yourdbpass>`, `MYSQL_ROOT_PASSWORD=<yourdbpass>` and `MYSQL_PASSWORD=<yourdbpass>`
 * Save the file.
-* Run `docker-compose up -d` (no admin rights required).
+* In the `Windows Powershell` run `docker-compose up -d` (no admin rights required).
 
 ## Execution
 * Open the `Docker Desktop GUI` and click on the link `6875:80` of the `bookstack container`. This opens the corresponding ip address in the browser (e.g. http://192.168.1.125:6875/login).
