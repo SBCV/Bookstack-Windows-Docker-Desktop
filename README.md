@@ -44,14 +44,14 @@ services:
     restart: unless-stopped
 ```
 * Navigate to a location where you want to store `bookstack-docker` (e.g. `F:\bookstack-docker`) and create a `docker-compose.yml` file (i.e. `F:\bookstack-docker\docker-compose.yml`) with the contents of the `docker-compose information` shown above.
-* In `docker-compose.yml` change the value of `APP_URL` to the local ip address (e.g. `APP_URL=192.168.1.125`). You can Use `ipconfig` to determine the local ip address (i.e. the value of the `IPv4 Address` entry).
+* In `docker-compose.yml` change the value of `APP_URL` to `APP_URL=http://<Local IP>:6875` (For instance `APP_URL=http://192.168.1.125:6875` where `192.168.1.125` is your local ip address). You can use `ipconfig` to determine the local ip address (i.e. the value of the `IPv4 Address` entry). **It is absolutely crucial to provide the `http://` prefix and the port `6875`. Do not use `https`.**
 * In `docker-compose.yml` adjust the values of `DB_PASS=<yourdbpass>`, `MYSQL_ROOT_PASSWORD=<yourdbpass>` and `MYSQL_PASSWORD=<yourdbpass>`
 * Save the file.
 * In the `Windows Powershell` run `docker-compose up -d` (no admin rights required).
 
 ## Execution
 * Open the `Docker Desktop GUI` and click on the link `6875:80` of the `bookstack container`. This opens the corresponding ip address in the browser (e.g. http://192.168.1.125:6875/login).
-* **BE PATIENT! IT MIGHT TAKE A WHILE UNTIL THE CONTAINERS CAN BE ACCESSED!** (~30 seconds after `docker-compose up -d` has finished its execution).
+* **Be patient! It might take a while until the containers can be accessed!** (~30 seconds after `docker-compose up -d` has finished its execution).
 * Login into bookstack with the default email `admin@admin.com` and the default password `password`.
 
 If you experience any problems you might want to have a look at this [issue](https://github.com/linuxserver/docker-bookstack/issues/125).
