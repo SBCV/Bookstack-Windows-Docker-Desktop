@@ -54,8 +54,7 @@ services:
 * **Be patient! It might take a while until the containers can be accessed!** (~30 seconds after `docker-compose up -d` has finished its execution).
 * Login into bookstack with the default email `admin@admin.com` and the default password `password`.
 
-## Execution
-Tested with
+## Tested with
 * `Docker Desktop`: `v4.20.1`
 * `bookstack` container: `ef5500acb1c2c6f830da1509b7d844e555f24f548cd329ffef0cb56c89b92d43`
 * `bookstack_db` container: `fd8c7020d2239059feb4f06769fac9009bc5da57f9d28409fdd60f265120044b`
