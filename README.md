@@ -3,6 +3,7 @@ Tutorial to run [Bookstack](https://github.com/BookStackApp/BookStack) under Win
 
 ## Installation
 * Go to the [Docker Desktop Webpage](https://www.docker.com/products/docker-desktop/) and download `Docker Desktop for Windows`.
+  * Tested with `v4.20.1` of `Docker Desktop`
 * Go to the [installation instructions of Bookstack](https://www.bookstackapp.com/docs/admin/installation/). Under the [Docker section](https://www.bookstackapp.com/docs/admin/installation/#docker) click on the corresponding [GitHub Repository of LinuxServer.io](https://github.com/linuxserver/docker-bookstack). There you find the following `docker-compose information`:
 ```
 ---
