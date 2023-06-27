@@ -65,3 +65,6 @@ Add `%ProgramFiles%\Docker\Docker\resources\com.docker.backend.exe` to the windo
 * `mysql` image: `91b53e2624b4`
 
 If you experience any problems you might want to have a look at this [issue](https://github.com/linuxserver/docker-bookstack/issues/125).
+
+## Other documentation / wiki software packages
+* https://en.wikipedia.org/wiki/Comparison_of_wiki_software
