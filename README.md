@@ -45,6 +45,7 @@ services:
 ```
 * Navigate to a location where you want to store `bookstack-docker` (e.g. `F:\bookstack-docker`) and create a `docker-compose.yml` file (i.e. `F:\bookstack-docker\docker-compose.yml`) with the contents of the `docker-compose information` shown above.
 * In `docker-compose.yml` change the value of `APP_URL` to `APP_URL=http://<Local IP>:6875` (For instance `APP_URL=http://192.168.1.125:6875` where `192.168.1.125` is your local ip address). You can use `ipconfig` to determine the local ip address (i.e. the value of the `IPv4 Address` entry). **It is absolutely crucial to provide the `http://` prefix and the port `6875`. Do not use `https`.**
+* Replace `image: lscr.io/linuxserver/mariadb` with `image: mysql`.
 * In `docker-compose.yml` adjust the values of `DB_PASS=<yourdbpass>`, `MYSQL_ROOT_PASSWORD=<yourdbpass>` and `MYSQL_PASSWORD=<yourdbpass>`
 * Save the file.
 * In the `Windows Powershell` run `docker-compose up -d` (no admin rights required).
