@@ -54,6 +54,9 @@ services:
 * **Be patient! It might take a while until the containers can be accessed!** (~30 seconds after `docker-compose up -d` has finished its execution).
 * Login into bookstack with the default email `admin@admin.com` and the default password `password` as mentioned in the [bookstack installation instructions](https://www.bookstackapp.com/docs/admin/installation/#manual).
 
+## Share in local network
+Add `%ProgramFiles%\Docker\Docker\resources\com.docker.backend.exe` to the windows firewall. The corresponding information can be found when clicking under `Control Panel\All Control Panel Items\Windows Defender Firewall` on `Allow an app or feature through Windows Defender Firewall`).
+
 ## Tested with
 * `Docker Desktop`: `v4.20.1`
 * `bookstack` container: `ef5500acb1c2c6f830da1509b7d844e555f24f548cd329ffef0cb56c89b92d43`
