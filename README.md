@@ -68,3 +68,5 @@ If you experience any problems you might want to have a look at this [issue](htt
 
 ## Other documentation / wiki software packages
 * https://en.wikipedia.org/wiki/Comparison_of_wiki_software
+* https://github.com/awesome-selfhosted/awesome-selfhosted#note-taking--editors
+* https://github.com/awesome-selfhosted/awesome-selfhosted#wikis
