@@ -46,6 +46,7 @@ services:
 * In `docker-compose.yml` change the value of `APP_URL` to `APP_URL=http://<Local IP>:6875` (For instance `APP_URL=http://192.168.1.125:6875` where `192.168.1.125` is your local ip address). You can use `ipconfig` to determine the local ip address (i.e. the value of the `IPv4 Address` entry). **It is absolutely crucial to provide the `http://` prefix and the port `6875`. Do not use `https`.**
 * Replace `image: lscr.io/linuxserver/mariadb` with `image: mysql`.
 * In `docker-compose.yml` adjust the values of `DB_PASS=<yourdbpass>`, `MYSQL_ROOT_PASSWORD=<yourdbpass>` and `MYSQL_PASSWORD=<yourdbpass>`
+* Good practice: provide a fixed version for bookstack (e.g. `image: lscr.io/linuxserver/bookstack:23.05.2`) and mysql (e.g. `image: mysql:8.0.33`). Available versions are listed [here](https://hub.docker.com/r/linuxserver/bookstack/tags) and [here](https://hub.docker.com/_/mysql).
 * Save the file.
 * In the `Windows Powershell` run `docker-compose up -d` (no admin rights required).
 
